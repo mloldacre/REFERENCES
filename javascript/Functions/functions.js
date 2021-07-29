@@ -1,0 +1,4 @@
+// Regular Function
+function add (){
+  
+}
