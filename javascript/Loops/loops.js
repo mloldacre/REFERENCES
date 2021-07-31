@@ -1,21 +1,46 @@
+let peopleManager = require('../Classes/people');
+
 // Regular For loop
 
-const num = 5;
+// const num = 5;
 
-for (let i = 0; i < num + 1; i++){
-  console.log({i});
-}
+// for (let i = 0; i < num + 1; i++){
+//   console.log({i});
+// }
 
-/* For IN Loop: The JavaScript for in statement loops through the properties of an Object*/
+/* For IN Loop: The JavaScript for in statement loops through the properties of
+an Object*/
 
-const person = { fname: "John", lname: "Doe", age: 25 };
+const people = ["John", "Sally", "Tim", "Pamela"]
 
-let text = "";
-for (let x in person) {
-  text += person[x] + " " + " SPACE ";
+const employee = [
+  { firstName: "Jane", listName: "Doe", age: 25 },
+  { firstName: "Pig", listName: "Fucker", age: 26 },
+  { firstName: "Cat", listName: "Licker", age: 27 },
+  { firstName: "Dog", listName: "Walker", age: 28 }];
+
+let friends = new peopleManager(people);
+
+console.log(friends);
+
+friends.addPeople("Jake")
+friends.addPeople("Leon")
+friends.addPeople("Fucker Mcghee")
+
+
+for (let person of friends.people) {
+  console.log("IN:", person);
 };
 
-console.log(text);
+
+
+for (let worker of employee){
+  console.log(worker["firstName"]);
+}
+
 
 // For OF Loop
 
+// for (let person of people) {
+//   console.log("OF:", person);
+// };
