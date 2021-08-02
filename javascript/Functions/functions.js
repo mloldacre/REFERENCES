@@ -71,4 +71,5 @@ console.log('newArrayObject :>> ', newArrayObject.next());
 console.log('newArrayObject :>> ', newArrayObject.next());
 console.log('newArrayObject :>> ', newArrayObject.next());
 console.log('newArrayObject :>> ', newArrayObject.next());
+console.log('newArrayObject :>> ', newArrayObject.next());
 
