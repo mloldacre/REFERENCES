@@ -41,6 +41,18 @@ for (let worker of employee){
 
 // For OF Loop
 
-// for (let person of people) {
-//   console.log("OF:", person);
-// };
+for (let person of people) {
+  console.log("OF:", person);
+};
+
+//While loop
+
+
+function idGenerator() {
+  let id = 1;
+
+  while (true) {
+    yield id;
+    id++;
+  }
+}
