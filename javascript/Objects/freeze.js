@@ -13,4 +13,6 @@ const car = Object.freeze({
     amount: 4
   }),
   color: "blue"
-})
+});
+
+
