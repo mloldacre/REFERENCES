@@ -9,6 +9,7 @@ let total = setArrOne.reduce(function (a,b){
 
 console.log('sONE:', total);
 
+// Random Array generator
 const randomNum = (min = 5, max = Math.floor(Math.random() * 50)) => {
   return Math.ceil(Math.random() * (max - min) + min);
 };
