@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: aqua;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  color: black;
+}
+
+a:hover{
+  color: crimson;
+}
+
+/* Canvas */
+canvas{
+  margin-top: 5px;
+  margin-left: 3px;
+}
+#canvasOne {
+  border: 5px black solid;
+}
+
+#canvasTwo {
+  border: 5px black solid;
+}
