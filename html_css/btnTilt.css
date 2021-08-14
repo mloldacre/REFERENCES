@@ -9,15 +9,35 @@ button {
 }
 
 .btn {
-  transform:
-    scale(var(--scale, 1.2))
-    rotate(var(--rotation, 10deg))
+  transform: scale(var(--scale, 1.2)) rotate(var(--rotation, 10deg))
 }
 
-.big{
+.big {
   --scale: 2;
 }
 
-.tilted{
+.tilted {
   --rotation: -10deg
+}
+
+.resizableOne {
+  border: 1px green solid;
+  overflow: hidden;
+  resize: both;
+  
+  min-width: 200px;
+  width: 300px;
+  max-width: 500px;
+}
+
+.resizableTwo {
+  border: 1px red solid;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+.resizableThree {
+  border: 1px blue solid;
+  resize: vertical;
+  overflow: hidden;
 }
