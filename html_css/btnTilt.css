@@ -1,0 +1,23 @@
+button {
+  display: block;
+  background-color: rgb(8, 77, 226);
+  margin: 2rem 4rem;
+  height: 25px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn {
+  transform:
+    scale(var(--scale, 1.2))
+    rotate(var(--rotation, 10deg))
+}
+
+.big{
+  --scale: 2;
+}
+
+.tilted{
+  --rotation: -10deg
+}
