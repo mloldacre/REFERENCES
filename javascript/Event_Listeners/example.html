@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./example.js" defer></script>
+  <title>Event Listeners</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent {
+      height: 300px;
+      width: 300px;
+      background-color: rgb(255, 117, 4);
+    }
+
+    .child {
+      height: 200px;
+      width: 200px;
+      background-color: aqua;
+    }
+
+    .grandchild {
+      height: 100px;
+      width: 100px;
+      background-color: chartreuse;
+    }
+
+    .greatGrandchild {
+      height: 50px;
+      width: 50px;
+      background-color: pink;
+    }
+
+    .baby {
+      height: 25px;
+      width: 25px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="parent">
+      <div class="child">
+        <div class="grandchild">
+          <div class="greatGrandchild">
+            <div class="baby" onclick="removeBaby()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
