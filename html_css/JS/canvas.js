@@ -5,6 +5,7 @@
   ctx.lineTo(200, 100);
   ctx.stroke();
 }
+
 {
   let circle = document.getElementById("canvasTwo");
   let ctx = circle.getContext("2d");
