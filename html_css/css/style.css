@@ -18,15 +18,17 @@ li a {
   color: black;
 }
 
-a:hover{
+a:hover {
   color: crimson;
 }
 
 /* Canvas */
-canvas{
+
+canvas {
   margin-top: 5px;
   margin-left: 3px;
 }
+
 #canvasOne {
   border: 5px black solid;
 }
