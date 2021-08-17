@@ -15,6 +15,7 @@ for (let y = 0; y < 8; y++) {
 
 
 function renderGrid(grid, players) {
+  //! What's going on here!!!!!!!!!!
   for (let i = 0; i < players.length; i++) {
     if (grid[players[i].y_position][players[i].x_position] !== null) {
       grid[players[i].y_position][players[i].x_position] = 0
