@@ -14,7 +14,7 @@ const baby = document.querySelector('.baby')
 parent.addEventListener('click', evt => {
   evt.preventDefault()
   console.log('Parent 3 bubble');
-},)
+})
 
 /* child.addEventListener('click', evt => {
   evt.preventDefault()
@@ -40,10 +40,10 @@ grandchild.addEventListener('click', evt => {
 greatGrandchild.addEventListener('click', evt => {
   evt.preventDefault()
   console.log('greatGrandchild 1 ran once!');
-}, {once: true})
+}, { once: true })
 
 
-baby.addEventListener('click', printSup )
+baby.addEventListener('click', printSup)
 
 
 
@@ -53,15 +53,15 @@ function printSup() {
 
 
 let counter = 3
-function removeBaby(){
+function removeBaby() {
 
-if (counter === 0) {
-  baby.removeEventListener('click', printSup)
-}
-counter = counter - 1
-console.log('counter :>> ', counter);
+  if (counter === 0) {
+    baby.removeEventListener('click', printSup)
+  }
+  counter = counter - 1
+  console.log('counter :>> ', counter);
 }
 
-function alertPop(){
+function alertPop() {
   alert('Does this work?')
 }
