@@ -137,9 +137,9 @@ function draw() {
     sqrX = (width - 1)
   }
   
-  //! This one
+  //*:) This one
   if (sqrY > height - 50){
-    //! this stuff
+    //*:) this stuff
     sqrY = height - 50;
     GRNDCOLLISION = true;
     GRAVITY = 0;
