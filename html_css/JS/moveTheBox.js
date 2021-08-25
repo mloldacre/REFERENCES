@@ -6,6 +6,42 @@ let height = myCanvas.height = window.innerHeight;
 
 let sqrX = 450, sqrY = 200
 let crlX = 450, crlY = 200
+let SPEED = 1
+let VELOCITY_X = 0, VELOCITY_Y = 0;
+
+document.addEventListener('keydown', (evt) => {
+
+  if (evt.key === "ArrowUp") {
+    VELOCITY_Y -= SPEED
+  }
+  if (evt.key === "ArrowDown") {
+    VELOCITY_Y += SPEED
+  }
+  if (evt.key === "ArrowRight") {
+    VELOCITY_X += SPEED
+  }
+  if (evt.key === "ArrowLeft") {
+    VELOCITY_X -= SPEED
+  }
+  
+  switch (evt.key){
+    case "w":
+    crlY -= SPEED
+    break;
+    case "s":
+    crlY += SPEED
+    break;
+    case "d":
+    crlX += SPEED
+    break;
+    case "a":
+    crlX -= SPEED
+    break;
+  }
+  
+
+  console.log('Key Down :>> ', evt);
+})
 
 function draw() {
 
@@ -25,11 +61,16 @@ function draw() {
   context.fillStyle = 'rgba(55,255,21,0.4)';
   context.fill()
 
-  sqrX += .2;
-  sqrY += .11;
 
-  crlX += .3;
-  crlY += .1;
+  sqrX += VELOCITY_X;
+  sqrY += VELOCITY_Y;
+  
+  // *Automatic Decelerating
+ VELOCITY_X *= .97
+ VELOCITY_Y *= .97
+
+  // crlX += .3;
+  // crlY += .1;
 
   requestAnimationFrame(draw)
 }
