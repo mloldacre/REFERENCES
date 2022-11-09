@@ -1,42 +1,42 @@
-let thePromise = new Promise((resolve, reject) => {
-  let sum = 1 + 3
-  if (sum === 2) {
-    resolve('This works')
+let thePromise = new Promise( ( resolve, reject ) => {
+  let sum = 3 + 2;
+  if ( sum <= 4 ) {
+    resolve( 'This works' );
   }
   else {
-    reject('This failed')
+    reject( 'This failed' );
   }
-})
+} );
 
-thePromise.then(message => {
-  console.log("This is in the 'then' section " + message);
-}).catch(message => {
-  console.log("This is in the 'catch' section " + message);
-})
+thePromise.then( message => {
+  console.log( "This is in the 'then' section, meaning: " + message );
+} ).catch( message => {
+  console.log( "This is in the 'catch' section, this means: " + message );
+} );
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
-function positiveSum(a, b) {
-  return a + b;
-}
+// function positiveSum( a, b ) {
+//   return a + b;
+// }
 
-function positivePromise(sum) {
-  return new Promise((res, rej) => {
-    if (sum >= 0) {
-      res(' positive number')
-    } else if (sum < 0) {
-      rej('This is negative')
-    }
-  })
-}
+// function positivePromise( sum ) {
+//   return new Promise( ( res, rej ) => {
+//     if ( sum >= 0 ) {
+//       res( ' positive number' );
+//     } else if ( sum < 0 ) {
+//       rej( 'This is negative' );
+//     }
+//   } );
+// }
 
-let answer = positiveSum(1, 2)
+// let answer = positiveSum( 1, 2 );
 
-positivePromise(answer).then(message => {
-  console.log(`Great, this is a ${message}`);
-}).catch(error => {
-  console.log(`Nooo, this is ${error}`);
-})
+// positivePromise( answer ).then( message => {
+//   console.log( `Great, this is a${message}` );
+// } ).catch( error => {
+//   console.log( `Nooo, this is ${error}` );
+// } );
 
-console.log(positiveSum(1, 1));
+// console.log( positiveSum( 1, 1 ) );
 
 //? Also look into .all and .race
