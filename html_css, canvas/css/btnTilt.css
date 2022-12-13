@@ -24,7 +24,7 @@ button {
   border: 1px green solid;
   overflow: hidden;
   resize: both;
-  
+
   min-width: 200px;
   width: 300px;
   max-width: 500px;
