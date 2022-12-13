@@ -1,5 +1,12 @@
+const prompt = require('prompt-sync')();
+
+const numOne = prompt('Enter a number: ');
+const numTwo = prompt('Enter another number: ');
+
+console.log(typeof numOne, typeof numTwo);
+
 let thePromise = new Promise((resolve, reject) => {
-	let sum = 2 + 2;
+	let sum = Number(numOne) + Number(numTwo);
 	if (sum <= 4) {
 		resolve('This works');
 	} else {
