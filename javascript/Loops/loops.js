@@ -22,7 +22,7 @@ const employee = [
 
 let friends = new peopleManager(people);
 
-console.log(friends);
+console.log('This is before items are added: ', friends);
 
 friends.addPeople('Jake');
 friends.addPeople('Leon');
